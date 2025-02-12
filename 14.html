@@ -6,12 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="input1" placeholder="Enter 'hello'" />
-    <button onclick="checkExactMatch()">Check</button>
+    <input type="text" id="input14" placeholder="Enter a phone number" />
+    <button onclick="checkPhoneNumber()">Check</button>
     <script>
-      function checkExactMatch() {
-        const input = document.getElementById("input1").value;
-        const regex = /^hello$/;
+      function checkPhoneNumber() {
+        const input = document.getElementById("input14").value;
+        const regex = /^\+?\d{10}$/;
         alert(regex.test(input) ? "Valid" : "Invalid");
       }
     </script>

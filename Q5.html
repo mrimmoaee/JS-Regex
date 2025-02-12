@@ -6,12 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="input1" placeholder="Enter 'hello'" />
-    <button onclick="checkExactMatch()">Check</button>
+    <input type="text" id="input5" placeholder="Enter a value" />
+    <button onclick="checkEndDigits()">Check</button>
     <script>
-      function checkExactMatch() {
-        const input = document.getElementById("input1").value;
-        const regex = /^hello$/;
+      function checkEndDigits() {
+        const input = document.getElementById("input5").value;
+        const regex = /[0-9]{4}$/;
         alert(regex.test(input) ? "Valid" : "Invalid");
       }
     </script>

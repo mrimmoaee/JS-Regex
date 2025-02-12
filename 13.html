@@ -6,12 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="input1" placeholder="Enter 'hello'" />
-    <button onclick="checkExactMatch()">Check</button>
+    <input type="text" id="input13" placeholder="Enter an email" />
+    <button onclick="checkEmail()">Check</button>
     <script>
-      function checkExactMatch() {
-        const input = document.getElementById("input1").value;
-        const regex = /^hello$/;
+      function checkEmail() {
+        const input = document.getElementById("input13").value;
+        const regex = /^[a-z]+@[a-z]+\.com$/;
         alert(regex.test(input) ? "Valid" : "Invalid");
       }
     </script>

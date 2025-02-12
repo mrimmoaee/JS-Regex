@@ -6,12 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="input1" placeholder="Enter 'hello'" />
-    <button onclick="checkExactMatch()">Check</button>
+    <input type="text" id="input11" placeholder="Enter a product ID" />
+    <button onclick="checkProductID()">Check</button>
     <script>
-      function checkExactMatch() {
-        const input = document.getElementById("input1").value;
-        const regex = /^hello$/;
+      function checkProductID() {
+        const input = document.getElementById("input11").value;
+        const regex = /^[A-Z]{3}\d{4}[a-z]{2}$/;
         alert(regex.test(input) ? "Valid" : "Invalid");
       }
     </script>

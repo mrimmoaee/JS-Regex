@@ -6,12 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="input1" placeholder="Enter 'hello'" />
-    <button onclick="checkExactMatch()">Check</button>
+    <input type="text" id="input2" placeholder="Enter a string" />
+    <button onclick="checkUppercase()">Check</button>
     <script>
-      function checkExactMatch() {
-        const input = document.getElementById("input1").value;
-        const regex = /^hello$/;
+      function checkUppercase() {
+        const input = document.getElementById("input2").value;
+        const regex = /[A-Z]/;
         alert(regex.test(input) ? "Valid" : "Invalid");
       }
     </script>

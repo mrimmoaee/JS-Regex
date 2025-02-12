@@ -6,12 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="input1" placeholder="Enter 'hello'" />
-    <button onclick="checkExactMatch()">Check</button>
+    <input type="text" id="input8" placeholder="Enter a direction" />
+    <button onclick="checkDirection()">Check</button>
     <script>
-      function checkExactMatch() {
-        const input = document.getElementById("input1").value;
-        const regex = /^hello$/;
+      function checkDirection() {
+        const input = document.getElementById("input8").value;
+        const regex = /^(north|south|east|west)$/i;
         alert(regex.test(input) ? "Valid" : "Invalid");
       }
     </script>
