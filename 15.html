@@ -6,13 +6,14 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="input12" placeholder="Enter a password" />
-    <button onclick="checkStrongPassword()">Check</button>
+    <input type="text" id="input15" />
+    <button onclick="validate15()">Check</button>
     <script>
-      function checkStrongPassword() {
-        const input = document.getElementById("input12").value;
-        const regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
-        let isValid = regex.text(input);
+      function validate15() {
+        let input = document.getElementById("input15").value;
+        let regex = /^\d{4}-\d{2}-\d{2}$/;
+        let isValid = regex.test(input);
+
         if (isValid) {
           window.alert("Valid");
         } else {

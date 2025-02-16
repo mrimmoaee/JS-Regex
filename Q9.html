@@ -12,7 +12,12 @@
       function checkTwoDigits() {
         const input = document.getElementById("input9").value;
         const regex = /^\d{2}$/;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>

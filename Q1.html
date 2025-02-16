@@ -12,7 +12,12 @@
       function checkExactMatch() {
         const input = document.getElementById("input1").value;
         const regex = /^hello$/;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>

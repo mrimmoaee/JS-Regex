@@ -12,7 +12,12 @@
       function checkPhoneNumber() {
         const input = document.getElementById("input14").value;
         const regex = /^\+?\d{10}$/;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>

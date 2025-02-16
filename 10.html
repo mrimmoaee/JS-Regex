@@ -12,7 +12,12 @@
       function checkLetterSpaceDigit() {
         const input = document.getElementById("input10").value;
         const regex = /^[A-Z]\s\d$/;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>

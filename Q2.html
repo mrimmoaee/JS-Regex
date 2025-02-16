@@ -12,7 +12,12 @@
       function checkUppercase() {
         const input = document.getElementById("input2").value;
         const regex = /[A-Z]/;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>

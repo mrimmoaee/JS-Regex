@@ -12,7 +12,12 @@
       function checkAnimal() {
         const input = document.getElementById("input7").value;
         const regex = /^(cat|dog)$/;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>

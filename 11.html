@@ -12,7 +12,12 @@
       function checkProductID() {
         const input = document.getElementById("input11").value;
         const regex = /^[A-Z]{3}\d{4}[a-z]{2}$/;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>

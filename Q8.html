@@ -12,7 +12,12 @@
       function checkDirection() {
         const input = document.getElementById("input8").value;
         const regex = /^(north|south|east|west)$/i;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>

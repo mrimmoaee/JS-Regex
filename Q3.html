@@ -12,7 +12,12 @@
       function checkDigits() {
         const input = document.getElementById("input3").value;
         const regex = /[0-9]/;
-        alert(regex.test(input) ? "Valid" : "Invalid");
+        let isValid = regex.text(input);
+        if (isValid) {
+          window.alert("Valid");
+        } else {
+          window.alert("Invalid");
+        }
       }
     </script>
   </body>
